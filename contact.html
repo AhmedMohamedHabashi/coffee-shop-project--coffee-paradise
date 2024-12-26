@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT page</title>
+    <style>
+    :root{
+        --main-color: #bc9667;
+        --second-color: #edeae3;
+        --text-color: #1b1b1b;
+        --bg-color: #fff;
+    
+    }
+
+    header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+.logo img{
+    width: 60px;
+    border-radius: 20px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color: var(--bg-color);
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background: var(--main-color);
+    border-radius: 0.5rem;
+    transition: 0.5s all linear;
+}
+.header-icon{
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header-icon .bx{
+    color: var(--bg-color);
+}
+.header-icon .bx:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+.search-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--bg-color);
+    width: 100%;
+}
+.search-box.active{
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s all linear;
+}
+.search-box input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500px;
+}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+header ul {
+    list-style: none;
+}
+/* Main content */
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.contact-form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+  font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f8f8f8;
+   background-color: #f8f8f8;
+    border-radius: 25px;
+}
+.contact-form button {
+    background-color: #bc9667;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+.contact-form button:hover {
+  color: var(--text-color);
+    transition: 0.5s;
+    background-color: #7e6342;
+}
+
+.contact-info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 20px;
+        flex: 1;
+    }
+        .contact-info-list p{
+            display: inline;
+            font-size: 15px;
+        } 
+        .contact-info-list i{
+            padding: 10px;
+        }
+/* Footer styles */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-section {
+  margin-top: 50px;
+  padding: 12px ;
+  background: var(--text-color);
+  margin-bottom: none;
+}
+
+.footer-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.footer-section .social-link-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+  font-size: 20px ;
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+  color: rgb(179, 140, 89);
+}
+
+.footer-section .policy-text .separator {
+  margin: 5px;
+  color: #fff;
+}
+
+
+
+main h1{
+  text-align: center;
+  font-size: 40px;
+}
+.policy-text a{
+  text-decoration: none;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+        header {
+            padding: 10px 15px;
+        }
+
+        .navbar {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--text-color);
+            padding: 10px;
+        }
+        .navbar a {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        #menu-icon {
+            display: block;
+        }
+
+        .contact-us {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .contact-info-list {
+            margin: 0 auto 20px;
+        }
+
+        .contact-form {
+            max-width: 100%;
+        }
+    }
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header><link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"/>
+
+        <a href="home.html" class="logo">
+          <img src="img/coffe-shop.jpg" alt="" />
+        </a>
+        <i class="bx bx-menu"id="menu-icon"></i>
+        <ul class="navbar">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="servies.html">Our Services</a></li> 
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="rate.html">Rate us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="header-icon">
+          <i class="bx bx-cart-alt"></i>
+          <i class="bx bx-search" id="search-icon"></i>
+        </div>
+        <div class="search-box">
+          <input type="search" name="" id="" placeholder="Search Here..." />
+        </div>
+        
+      </header>
+    <main>
+        <h1>CONTACT <span style="color: #bc9667";>US</span></h1>
+        <section class="contact-us">
+            <div class="info">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                      <i class="fa-regular fa-envelope"></i>
+                      <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                      <i class="fa-solid fa-phone"></i>
+                      <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>Sunday - Friday: 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>Saturday: 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                      <i class="fa-solid fa-globe"></i>
+                      <p>www.coffee paradise.com</p>
+                    </li>
+                  </ul>
+            </div>
+            <form action="#" method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+         <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 Coffee Shop</p>
+
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+   
+</body>
+
+</html>
