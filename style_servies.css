@@ -70,6 +70,7 @@ header {
   .header-icon i:hover {
     color: #bc9667;
   }
+  
   .search-box {
     display: none; /* يخفي مربع البحث */
   }
@@ -113,8 +114,6 @@ body {
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.5);
 
 }
-
-
 
 /* تنسيق النصوص داخل العناوين <h5> */
 h5 {
