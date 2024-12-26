@@ -130,8 +130,6 @@ body {
   header{
       padding: 12px 4%;
   }
-  #menu-icon{
-      display: initial;
   }
   .navbar {
       position: absolute;
