@@ -70,12 +70,6 @@ header {
   .header-icon i:hover {
     color: #bc9667;
   }
-  #menu-icon{
-    color: var(--bg-color);
-    font-size: 24px;
-    z-index: 100001;
-    cursor: pointer;
-    display: none;
   .search-box {
     display: none; /* يخفي مربع البحث */
   }
