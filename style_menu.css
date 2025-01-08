@@ -310,10 +310,6 @@ button:hover {
         display: block; /* Show navigation links when active */
     }
 
-    #menu-icon {
-        display: block; /* Show menu icon */
-    }
-
     .navbar a {
         font-size: 0.8rem;
         padding: 6px 12px;
@@ -322,7 +318,9 @@ button:hover {
     .menu-category {
         grid-template-columns: 1fr 1fr;
     }
-
+    #menu-icon{
+        display: initial;
+    }
     .hh1 {
         font-size: 5rem;
     }
