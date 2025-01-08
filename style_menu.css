@@ -285,10 +285,6 @@ button:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .search-box {
-        top: 120%;
-    }
-
     .hh1 {
         font-size: 6rem;
     }
