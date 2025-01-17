@@ -168,7 +168,7 @@ form input{
     border: none;
     padding: 10px 20px;
 }
-@media (max-width:1058px){
+@media (max-width:1200px){
     header{
         padding: 16px 60px;
     }
@@ -181,7 +181,7 @@ form input{
     
 }
 
-@media (max-width:991px){
+@media (max-width:995px){
     header{
         padding: 16px 4%;
     }
@@ -199,6 +199,10 @@ form input{
     }
     #menu-icon{
         display: initial;
+    }
+      }
+    .home-text{
+        padding-top: 100px;
     }
     .navbar {
         position: absolute;
@@ -231,7 +235,7 @@ form input{
         width: 55px;
     }
     .home-text{
-        padding-top: 15px;
+        padding-top: 35px;
     }
     .home-text{
         font-size: 1.4rem;
