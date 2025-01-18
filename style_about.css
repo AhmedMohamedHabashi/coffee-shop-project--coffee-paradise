@@ -204,7 +204,7 @@ h2 #section-title-us{
     margin-right: 4rem;
   }
 }
-@media (max-width: 995px){
+@media (max-width: 998px){
   header{
     padding: 16px 4%;
   }
@@ -281,16 +281,10 @@ h2 #section-title-us{
   }
     .navbar {
         position: absolute;
-        top: -570px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--second-color);
-        row-gap: 1.4rem;
-        padding: 20px;
-        transition: 0.3s;
-        text-align: center;
+        top: 570px;
+    }
+  .navbar a{
+      display: none;
     }
 
   .header-icon {
